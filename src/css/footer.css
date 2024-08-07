@@ -1,0 +1,47 @@
+.footer_background {
+    position: relative;
+    margin-top: 7rem;
+}
+
+.footer_background canvas {
+    height: 80vh !important;
+    width: 100% !important;
+    border-radius: 30px;
+    height: 80vh !important;
+    width: 100% !important;
+    border-radius: 30px;
+}
+
+.footer_background .content {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer_background .content .footer_content {
+    font-size: 4rem;
+    width: 65%;
+    padding: 3rem;
+}
+
+.footer .cta {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+}
+
+.footer .cta .button {
+    width: 20%;
+}
+
+.footer .cta .email {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: .5rem;
+}

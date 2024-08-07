@@ -1,0 +1,48 @@
+.work {
+    color: #fff;
+    padding-top: 7rem;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .works {
+    width: 60%;
+}
+
+.work .work_title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    opacity: .5;
+    margin-bottom: 4rem;
+}
+
+.work .work_item {
+    border-bottom: 1px solid#fff;
+    padding: 1rem;
+    padding-left: 0;
+    padding-bottom: .5rem;
+    width: 100%;
+    /* border: 1px solid; */
+    margin-bottom: 1.5rem;
+}
+
+.work_item .title {
+    opacity: .6;
+    font-weight: 200;
+}
+
+.work_item .title span {
+    font-size: .8rem;
+    opacity: .5;
+}
+
+.work_item .bold_title {
+    font-size: 5.5rem;
+    letter-spacing: 1px;
+    line-break: strict;
+}

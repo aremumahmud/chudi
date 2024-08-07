@@ -1,0 +1,62 @@
+.skills {
+    color: #fff;
+    display: flex;
+    margin-bottom: 4rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+.skills .skill_title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    opacity: .5;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    /* width: 100%; */
+}
+
+.skills .skills_collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 1rem 1rem;
+    margin-bottom: 5rem;
+}
+
+.skills .skills_collection .skill_item {
+    padding: 1.5rem;
+    /* border: 1px solid #ffffff2c; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    background-color: #151515;
+}
+
+.skills .skills_collection .skill_item .image {
+    font-size: 4rem;
+}
+
+.skills .skills_collection .skill_item .name {
+    font-size: 1.5rem;
+    opacity: .8;
+}
+
+.skills .skills_collection .skill_item .info {
+    font-size: 1.1rem;
+    /* display: none; */
+    /* display: flex; */
+}
+
+.skills .skills_collection .skill_item .info span {
+    font-weight: 200;
+    text-decoration: underline rgba(216, 0, 0, 0.623);
+}

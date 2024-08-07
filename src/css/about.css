@@ -1,0 +1,42 @@
+.about_wrap {
+    color: #fff;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_wrap .about {
+    display: flex;
+    gap: 5rem;
+    width: 60%;
+    height: 25rem;
+}
+
+.about_wrap .img {
+    width: 120%;
+    height: 25rem;
+    border-radius: 30px;
+    background: linear-gradient( #5c54f9, rgba(128, 0, 128, 0.705));
+}
+
+.about_wrap .img img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.about_wrap .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2.3rem;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.about_wrap .content p {
+    width: 90%;
+    font-size: 1.7rem;
+}
