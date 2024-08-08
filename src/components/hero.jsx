@@ -13,7 +13,7 @@ function Hero (){
              <div className="catchy">
              <img className='curve three' src={curve} alt="" />
              <img className='curve four' src={curve} alt="" />
-             <div style={{height:'100%'}}>
+             <div className="hero_content" >
              <BlurText text="A versatile software engineer with a strong design aesthetic" className="catchy_text" delay={50} />
                
                 <div className="icon-arrow">

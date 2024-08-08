@@ -1,0 +1,175 @@
+@media (min-width: 596px) and (max-width: 790px) {
+    /* Other mobile-specific styles */
+    .container {
+        padding: 0 2rem !important;
+        width: 100vw !important;
+        height: 100vh;
+    }
+    .header {
+        /* border: 1px solid; */
+        width: 87vw !important;
+        justify-content: space-between;
+        /* background-color: #000; */
+    }
+    .desktop {
+        display: flex !important;
+    }
+    .header .mobile {
+        display: none !important;
+    }
+    .header .nav {
+        margin-top: 0 !important;
+        padding-top: 0;
+        /* background-color: black !important; */
+        color: #fff !important;
+        padding: .5rem 2rem .5rem 2rem !important;
+        border: 1px solid #fff !important;
+        /* padding-bottom: 4rem !important;
+*/
+    }
+    .nav_mobile {
+        position: absolute;
+        padding: 1rem;
+        /* border: 1px solid; */
+        top: 97.5%;
+        width: 100%;
+        height: 75vh;
+        border-radius: 30px 0px 30px 30px;
+        background: linear-gradient( #5c54f9, rgba(128, 0, 128, 0.705));
+    }
+    .header .close {
+        border-radius: 20px !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        background-color: #5c54f9 !important;
+        border: none !important;
+    }
+    .blind {
+        padding: .5rem;
+        /* border: 1px solid; */
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 100%;
+        background-color: #5c54f9 !important;
+        /* padding-bottom: -1rem; */
+    }
+    .nav_mobile {
+        list-style-type: none;
+        padding: 1rem;
+        padding-top: 3.5rem;
+    }
+    .nav_mobile li {
+        font-size: 2.3rem;
+        border-bottom: 1px solid;
+        margin-bottom: .75rem;
+        font-weight: 350;
+        padding-bottom: .4rem;
+    }
+    .hero {
+        flex-direction: column;
+        /* padding-top: 4.8rem; */
+    }
+    .animated canvas {
+        border-radius: 30px 30px 30px 30px !important;
+        height: 90vh !important;
+    }
+    .animated {
+        width: 100% !important;
+    }
+    /* .hero_content {
+border: 1px solid;
+} */
+    .hero .catchy {
+        position: absolute;
+        color: white;
+        background-color: #000;
+        top: 50vh !important;
+        height: 90% !important;
+        width: 70% !important;
+        border-top-right-radius: 30px;
+    }
+    .hero .four {
+        transform: rotate(-90deg);
+        /* border: 1px solid; */
+        position: absolute;
+        bottom: 1.3% !important;
+        left: 100%;
+    }
+    .catchy_text {
+        font-size: 1.7rem !important;
+        width: 100% !important;
+        padding-top: 3rem !important;
+    }
+    .icon-arrow {
+        /* padding: 1rem; */
+        margin-top: 5% !important
+    }
+    .hero .other_content {
+        /* border: 1px solid red !important; */
+        width: 100% !important;
+    }
+    .swiper {
+        border-radius: 20px !important;
+        width: 100% !important;
+        margin-top: 2rem;
+    }
+    .swiper-bottom {
+        height: 17rem !important;
+    }
+    .work .works {
+        width: 100% !important;
+    }
+    .work_item .bold_title {
+        font-size: 2rem !important;
+    }
+    .about_wrap .about {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .about_wrap .img {
+        width: 100% !important;
+    }
+    .about_wrap .content p {
+        font-size: 1.3rem !important;
+        width: 100% !important;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+    .button {
+        width: 100% !important;
+        font-size: 1.2rem !important;
+    }
+    .middle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills {
+        margin: 0 !important;
+    }
+    .skills .skills_collection {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .skills .skills_collection .skill_item .name {
+        font-size: 1rem !important;
+        opacity: .8;
+    }
+    .skills .skills_collection .skill_item .info {
+        font-size: .8rem !important;
+    }
+    .reduce_pad {
+        padding-top: 3rem !important;
+    }
+    .footer_background .content .footer_content {
+        font-size: 1.5rem !important;
+        width: 90% !important;
+        /* border: 1px solid; */
+        padding: 0rem !important;
+        text-align: center;
+    }
+    .footer_background canvas {
+        height: 50vh !important;
+    }
+}

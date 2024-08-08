@@ -41,6 +41,10 @@
     z-index: 3;
     position: relative;
     background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .inner::before {

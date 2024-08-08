@@ -3,9 +3,9 @@ import "../css/work.css";
 import { BlurText } from "./blurtext";
 import { SplitText } from "./splittext";
 
-function Work({ works = [1, 2, 3, 4] , title="EXPERIENCE" , id}) {
+function Work({ works = [1, 2, 3, 4] , title="EXPERIENCE" , id, reduce=false}) {
   return (
-    <div className="work" id={id}>
+    <div className={reduce?"work reduce_pad":'work'} id={id}>
       <p className="work_title">{title}</p>
       <div className="works">
         {works.map((work, i) => {

@@ -13,8 +13,10 @@ function About(){
         </div>
         <div className="content">
             <BlurText text={text} />
-               
-            <a href="#contact"><GlowBtn text={"Get in touch"} /></a>
+            <div className="middle">
+              <a href="#contact"><GlowBtn text={"Get in touch"} /></a>
+            </div>   
+          
             {/* <button></button> */}
         </div>
        </div>

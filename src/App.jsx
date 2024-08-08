@@ -6,6 +6,8 @@ import { DiCss3Full, DiHtml5, DiLinux, DiMongodb, DiMysql, DiRedis } from 'react
 import {} from 'react-icons/fi'
 
 import './App.css'
+import './css/responsive.css'
+import './css/responsive_tab.css'
 import About from './components/about'
 import Footer from './components/footer'
 import Header from './components/header'
@@ -88,9 +90,9 @@ function App() {
       <Work id={'experience'} works={work_experience} />
       <About />
       <Skills skill={skills_bar} />
-      <Work id={'projects'} title={'PERSONAL PROJECTS'} works={personal_projects} />
-     
-      <Footer />
+      <Work reduce={true} id={'projects'} title={'PERSONAL PROJECTS'} works={personal_projects} />
+      
+      <Footer />{/* */}
     </div>
   )
 }

@@ -4,10 +4,9 @@
 }
 
 .footer_background canvas {
-    height: 80vh !important;
     width: 100% !important;
     border-radius: 30px;
-    height: 80vh !important;
+    height: 80vh;
     width: 100% !important;
     border-radius: 30px;
 }
