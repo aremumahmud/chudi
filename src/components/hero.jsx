@@ -16,9 +16,12 @@ function Hero (){
              <div className="hero_content" >
              <BlurText text="A versatile software engineer with a strong design aesthetic" className="catchy_text" delay={50} />
                
-                <div className="icon-arrow">
+               <a href="#about">
+                    <div className="icon-arrow">
                    <FaArrowDown />
                 </div>
+               </a>
+            
              </div>
                
              </div>
