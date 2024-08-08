@@ -69,7 +69,7 @@ function Header(){
         </div>
       }
       <div className="curvysides mobile">
-      <img className='curve first' src={curve} alt="" />
+      {/* <img className='curve first' src={curve} alt="" /> */}
        <img className='curve second' src={curve} alt="" />
       </div>
      
