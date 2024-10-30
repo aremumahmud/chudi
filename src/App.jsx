@@ -42,7 +42,7 @@ let personal_projects = [
 function App() {
  
   let [open, setOpen] = useState(false)
-  let [light, setLight] = useState(true)
+  let [light, setLight] = useState(false)
 
   let changeTheme = () => {
     setLight(l=> !l)
