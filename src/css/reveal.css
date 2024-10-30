@@ -1,0 +1,94 @@
+.reveal {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    z-index: 200000;
+    left: 0;
+    bottom: 0;
+    height: 0vh;
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border: 1rem solid #151515;
+    /* display: none; */
+    transition: height 2s;
+    visibility: hidden;
+}
+
+.reveal .reveal_header {
+    color: #fff;
+    /* opacity: .9; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.reveal .reveal_header .reveal_job {
+    font-size: 2rem;
+}
+
+.reveal .reveal_header .sub_head {
+    font-weight: 100;
+}
+
+.reveal .duties {
+    color: #fff;
+}
+
+.reveal .duties .roles_title {
+    text-align: center;
+    text-transform: uppercase;
+    opacity: .5;
+    font-size: 1.1rem;
+    border-bottom: .2rem solid;
+    cursor: pointer;
+}
+
+.reveal .achievements {
+    margin-top: 2rem;
+    overflow-y: scroll;
+    height: 19rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.reveal .achievements::-webkit-scrollbar {
+    background-color: #151515;
+    border-radius: 24px;
+}
+
+.reveal .achievements::-webkit-scrollbar-thumb {
+    background-color: rgb(63, 60, 60);
+    border-radius: 24px;
+}
+
+.reveal .achievements .achieve {
+    border-bottom: 1px solid #6383d3;
+    font-size: .9rem;
+    background: #151515;
+    padding: 1rem;
+    border-radius: 24px;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+}
+
+.reveal .achievements .achieve p:first-child {
+    font-size: 2rem;
+    opacity: .5;
+}
+
+.reveal .achievements .achieve p:last-child {
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: .2px;
+}
+
+.duties .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}

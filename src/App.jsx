@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/curve.svg'
 // import viteLogo from '/vite.svg'
-import { FaAmazon, FaJs, FaNodeJs, FaPython } from 'react-icons/fa6'
+import { FaAmazon, FaCcDiscover, FaJs, FaNodeJs, FaPython } from 'react-icons/fa6'
 import { DiCss3Full, DiHtml5, DiLinux, DiMongodb, DiMysql, DiRedis } from 'react-icons/di'
 import {} from 'react-icons/fi'
 
@@ -16,6 +16,15 @@ import Skills from './components/skills'
 import Work from './components/work'
 import Rabbit from './components/rabbit'
 import Azure from './components/azure'
+import Companies from './components/marquee'
+import images from './data/images'
+import oem from './data/oem'
+import pefeciency from './data/pefeciency'
+import Reveal from './components/reveal'
+import experience from './data/experience'
+import { useEffect, useState } from 'react'
+import certs from './data/certs'
+import Cert from './components/certification'
 
 
 let personal_projects = [
@@ -26,71 +35,44 @@ let personal_projects = [
   }
 ]
 
-let work_experience = [
-  {title:'Senior Software Engineer', date:'Jan 2018 - Dec 2022', name:'IBTIMI'},
-  {title:"Software Engineer", date:'Oct 2023 - Sept 2023' , name:'BODEGA VIP RADIO'},
-  {title:'Senior Software Engineer' , date:'Dec 2023 - Present' , name:'DATANOTCH'}
-]
 
-let skills_bar = [{
-  icon: <FaNodeJs />,
-  name:'Node.JS',
-  proficiency:'Expert'
-},{
-  icon: <FaJs />,
-   name:'JavaScript',
-  proficiency:'Expert'
-},{
-  icon: <FaPython />,
-   name:'Python',
-  proficiency:'Intermediate'
-},{
-  icon:<DiLinux />,
-   name:'Linux',
-  proficiency:'Intermediate'
-},{icon:<DiMongodb />,
-  name:'Mongodb',
- proficiency:'Expert'},{icon:<DiMysql />,
-  name:'MySQL',
- proficiency:'Expert'},
- {icon:<DiRedis />,
-  name:'Redis',
- proficiency:'Expert'},
-{
-  icon:<FaAmazon />,
-   name:'Amazon Web Services',
- proficiency:'Intermediate'
-},{
-  icon:<DiCss3Full />,
-   name:'CSS3',
- proficiency:'Expert'
-},{
-  icon:<DiHtml5 />,
-   name:'HTML5',
- proficiency:'Expert'
-},{
-  icon:<Rabbit size={50} />,
-   name:'RabbitMq',
- proficiency:'Expert'
-}
-,{
-  icon:<Azure size={50}/>, 
-   name:'Azure',
- proficiency:'Intermediate'
-}]
+
 
 
 function App() {
  
+  let [open, setOpen] = useState(false)
+  let [light, setLight] = useState(true)
+
+  let changeTheme = () => {
+    setLight(l=> !l)
+  }
+
+  useEffect(() => {
+    if (!light) {
+      document.body.style.background = '#000'
+        
+    } else {
+      document.body.style.background = '#fff'
+      
+    }
+  })
+ 
   return (
     <div className='container'>
-         <div className="band"></div>
-      <Header />
-      <Hero />
-      <Work id={'experience'} works={work_experience} />
-      <About />
-      <Skills skill={skills_bar} />
-      <Work reduce={true} id={'projects'} title={'PERSONAL PROJECTS'} works={personal_projects} />
+      {
+        open && <Reveal  light={light}  open={open} setOpen={setOpen} />
+      }
+     
+         <div className="band" style={light?{background:'#fff'}:{}} ></div>
+      <Header changeTheme={changeTheme} light={light} />
+      <Hero light={light} />
+      <Work light={light} setOpen={setOpen} id={'experience'} works={experience} />
+      <About light={light}/>
+      <Companies  light={light} companies={images} />
+      <Skills  light={light} skill={oem} />
+      <Work light={light}  reduce={true} id={'projects'} title={'AREA OF SPECIALIZATION'} works={pefeciency} string={true} />
+      <Cert light={light} reduce={true} id={'certs'} title={'Certifications / Hands-on Training'} works={certs} />
       
       <Footer />{/* */}
     </div>

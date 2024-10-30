@@ -2,6 +2,8 @@
 // // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import openSource from "../data/openSource.jsx";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,14 +16,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { FaAws, FaGit, FaGithub, FaNodeJs, FaPython, FaReact } from "react-icons/fa6";
 // import {B} from 'react-icons/bi'
 
-export default function SwiperBottom() {
+export default function SwiperBottom({light}) {
   return (
-    <div className="swiper-bottom">
+    <div className={!light?"swiper-bottom":'swiper-bottom_light'}  >
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -29,41 +31,16 @@ export default function SwiperBottom() {
         }}
         // navigation={true}
         modules={[Autoplay, Pagination]}
-        className="mySwiper">
-        <SwiperSlide>
-          <div className="content_slide">
-            <p className="title_big"><FaNodeJs /></p>
-            <p className="title_small">Creating efficient and scalable API solutions in Nodejs</p>
+        className="mySwiper" >{
+          openSource && openSource.map((data, i)=>{
+            return  <SwiperSlide key={i}>
+              <div className="content_slide">
+            <p className="title_big">{data.icon}</p>
+            <p className="title_small">{data.text}</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div className="content_slide">
-            <p className="title_big"><FaReact /></p>
-            <p className="title_small">Crafting responsive and intuitive UI designs with ReactJS </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div className="content_slide">
-            <p className="title_big"><FaPython /></p>
-            <p className="title_small">AI integration and crafting of computational heavy solutions</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div className="content_slide">
-            <p className="title_big"><FaGithub /></p>
-            <p className="title_small">Version control, CI/CD pipelines with Git & Github</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div className="content_slide">
-            <p className="title_big"><FaAws /></p>
-            <p className="title_small">Cloud computing & Devops with amazon web services</p>
-          </div>
-        </SwiperSlide>
+          })
+        }
       </Swiper>
     </div>
   );

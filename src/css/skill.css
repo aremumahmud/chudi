@@ -22,7 +22,7 @@
 
 .skills .skills_collection {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     gap: 1rem 1rem;
     margin-bottom: 5rem;
@@ -59,4 +59,8 @@
 .skills .skills_collection .skill_item .info span {
     font-weight: 200;
     text-decoration: underline rgba(216, 0, 0, 0.623);
+}
+
+.skill_item .image img {
+    width: 5rem;
 }

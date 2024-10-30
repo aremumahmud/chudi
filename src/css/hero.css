@@ -8,6 +8,28 @@
     border-radius: 0px 30px 30px 0px;
 }
 
+.backy {
+    height: 94vh;
+    width: 100%;
+    border-radius: 0px 30px 30px 0px;
+    object-fit: cover;
+}
+
+.hero_title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    opacity: .5;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    color: #fff;
+    text-align: center;
+    /* border: 1px solid; */
+    /* width: 100%; */
+    padding: 1rem;
+}
+
 .hero_content {
     height: 100%;
 }
@@ -45,7 +67,7 @@
 }
 
 .catchy_text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     width: 80%;
     padding-top: 1rem;
 }
@@ -68,5 +90,6 @@
     padding: .5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
