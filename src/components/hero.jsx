@@ -22,7 +22,7 @@ function Hero ({light}){
                     color: '#000',
                     borderTopRightRadius: '30px'
              }:{}} >
-             <BlurText text="Versatile Senior DevOps Engineer with expertise in infrastructure design, network optimization, and security." className="catchy_text" delay={50} />
+             <BlurText text="Versatile Senior DevOps Engineer with expertise in Data Center design, storage & network optimization, and Cybersecurity optimization." className="catchy_text" delay={50} />
                
                <a href="#about">
                     <div className="icon-arrow">

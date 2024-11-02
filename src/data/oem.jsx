@@ -20,13 +20,41 @@ import dell from '../assets/oem/dell.svg'
 import trend from '../assets/oem/trendmicro.svg'
 import next from '../assets/oem/nextcoud-removebg-preview.png'
 import microtik from '../assets/oem/microtik-removebg-preview.png'
-
-
+import { FaAmazon, FaAws, FaGoogle, FaMicrosoft, FaUbuntu } from 'react-icons/fa6'
+import aws from '../assets/oem/aws.png'
+import azure from '../assets/oem/azure.png'
+import ubuntu from '../assets/oem/ubuntu.png'
+import prox from '../assets/oem/proxmox.png'
+import redHat from '../assets/oem/redhat.png'
+import cloudflare from '../assets/oem/cloudflare.png'
+import gcp from '../assets/oem/gcp.png'
 
 export default [
     {
+        img: aws,
+        name:'AWS Cloud'
+    }, {
+        img: gcp,
+        name:'GCP'
+    }, {
+        img: azure,
+        name:'Azure Cloud'
+    }, {
         img: next,
         name:'Next Cloud'
+    },
+     {
+        img: prox,
+        name:'Proxmox'
+    }, {
+        img: cloudflare,
+        name:'Cloudflare'
+    }, {
+        img: redHat,
+        name:'RedHat'
+    }, {
+        img: ubuntu,
+        name:'Ubuntu'
     },
     {
         img: cisco,

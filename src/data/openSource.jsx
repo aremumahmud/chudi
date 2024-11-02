@@ -10,7 +10,51 @@ import ansible from '../assets/id4e-QHH7H_1729759257546.svg'
 import zabbix from '../assets/idK9iYgl0P_1729759836862.png'
 import icinga from '../assets/id0sh7FaeK_1729760047787.svg'
 import kube from '../assets/kubernetes-svgrepo-com.svg'
-export default [{ icon: <img src={kube} />,
+
+import trafek from '../assets/traefik-1.svg'
+import grafana from '../assets/grafana.svg'
+import authentik from '../assets/authentik-orange.svg'
+import haproxy from '../assets/haproxy-ar21-1.svg'
+import truenas from '../assets/truenas-svgrepo-com.svg'
+import samba from '../assets/brand-samba-svgrepo-com.svg'
+import wazuh from '../assets/wazuh.svg'
+import glusterFs from '../assets/gluster.png'
+import monit from '../assets/monit.png'
+import crouwsec from '../assets/crowdsec.png'
+
+export default [{
+    icon:<img src={trafek} />,
+    text:'Traefik'
+},{
+    icon:<img src={grafana} />,
+    text: "Grafana"
+},{
+    icon:<img src={authentik} />,
+    text:"Authentik"
+},{
+    icon:<img src={haproxy} />,
+    text:'HA Proxy'
+},{
+    icon:<img src={ truenas} />,
+    text:'TrueNas'
+},{
+    icon:<img src={samba} />,
+    text: "Samba"
+},{
+    icon:<img src={ wazuh} />,
+    text:"Wazuh"
+},{
+    icon: <img src={glusterFs} />,
+    text:"GlusterFS"
+},{
+    icon:<img src={monit} />,
+    text:"Monit"
+},{
+    icon:<img src={crouwsec} /> ,
+    text:"Crowdsec"
+},
+    {
+        icon: <img src={kube} />,
     text: "Kubernetes"},
     {
     icon: <FaLinux color="#E95420"/>,

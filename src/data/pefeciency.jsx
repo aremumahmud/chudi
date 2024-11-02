@@ -1,7 +1,7 @@
 export default [
     'System Administration',
 'Network Design and Integration',
-'InfiniBand Technology' ,
+'Storage Technology' ,
 'Software Define Networking',
 'Network Security' ,
 'Data Center Design',
