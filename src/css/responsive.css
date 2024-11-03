@@ -200,7 +200,7 @@ border: 1px solid;
             .footer_background img {
                 width: 100% !important;
                 border-radius: 30px;
-                height: 50vh !important;
+                height: 65vh !important;
                 width: 100% !important;
                 object-fit: cover;
                 border-radius: 30px;
@@ -229,5 +229,10 @@ border: 1px solid;
             }
             .reveal .duties .roles_title {
                 font-size: .9rem !important
+            }
+            .num_foot {
+                flex-direction: column;
+                gap: .5rem !important;
+                margin-top: 2rem;
             }
         }

@@ -27,18 +27,9 @@ function Footer({ light }) {
             <a className="cta" href="mailto:chudinnoch@outlook.com">
               <GlowBtn text={"Let's talk"} />
                       </a>
-                      <div style={{
-                          display: 'flex',
-                          gap:'2rem'
-                      }}>
-                           <a style={{
-                          display: 'flex',
-                          gap:'.5rem'
-                      }}  href=""><FaPhone />+1 (682) 559-8378</a>
-                          <a style={{
-                          display: 'flex',
-                          gap:'.5rem'
-                      }} href=""><FaPhone /> +1 (469) 465-2502</a>
+                      <div className="num_foot">
+                           <a  href=""><FaPhone />+1 (682) 559-8378</a>
+                          <a href=""><FaPhone /> +1 (469) 465-2502</a>
                       </div>
                      
 
