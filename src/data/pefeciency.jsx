@@ -1,4 +1,5 @@
 export default [
+    "DevOps",
     'System Administration',
 'Network Design and Integration',
 'Storage Technology' ,

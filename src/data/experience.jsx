@@ -61,7 +61,7 @@ system usage and performance optimization.`
     ]
   },
   {
-    title: "Network/Systems Manager, (Abuja, Nigeria)",
+    title: "Tech Manager, (Abuja, Nigeria)",
     date: "AUG 2007 – MAY 2018",
         name: "Interra Networks Limited",
     list: [
