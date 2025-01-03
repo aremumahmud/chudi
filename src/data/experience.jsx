@@ -3,6 +3,7 @@ export default [
      title: "Managing Director",
     date: "JAN 2025 – PRESENT",
     name: "Datanotch Consulting",
+      list: []
   },
   {
     title: "SNR, DEV OPS ENGINEER (CONTRACT), (Atlanta)",
